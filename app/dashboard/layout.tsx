@@ -10,13 +10,19 @@ export default function DashboardLayout({
   const [count, setCount] = useState(0);
   return (
     <Fragment>
-      <div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          border: "3px dashed black",
+          flexDirection: "column",
+        }}
+      >
         <div
           style={{
             color: "blue",
             display: "flex",
             justifyContent: "space-around",
-            alignContent: "center",
           }}
         >
           <Link href="/dashboard/setting">setting</Link>

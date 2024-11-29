@@ -9,13 +9,19 @@ export default function DashboardTemplate({
   const [count, setCount] = useState(0);
   return (
     <Fragment>
-      <div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          flexDirection: "column",
+        }}
+      >
         <h2>template: {count}</h2>
         <button className="test" onClick={() => setCount(count + 1)}>
           increment
         </button>
         <br />
-        {children}
+        content:{children}
       </div>
     </Fragment>
   );
