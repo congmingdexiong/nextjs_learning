@@ -22,7 +22,7 @@ export default function Header() {
 
   return (
     <div className="absolute w-full z-10">
-      <div className="flex justify-between container mx-auto text-white p-8">
+      <div className="flex justify-between container mx-auto text-white p-8 items-center">
         <Link className="text-3xl font-bold" href="/">
           Home
         </Link>

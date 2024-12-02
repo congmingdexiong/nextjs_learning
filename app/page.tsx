@@ -1,3 +1,11 @@
+import homeScr from "/public/5.jpg";
+import Hero from "./components/hero";
 export default function Page() {
-  return <div className="bg-red-500 h-screen">Hello World</div>;
+  return (
+    <Hero
+      imageUrl={homeScr}
+      altTxt="Home"
+      content="Welcome to our website"
+    ></Hero>
+  );
 }
